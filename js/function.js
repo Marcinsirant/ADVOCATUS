@@ -1,6 +1,4 @@
 
-console.log("podłoczone");
-
 const answer = document.getElementById("answer");
 document.getElementById("quest-one").addEventListener("mousemove", function(){answerFunction(1);}, false);
 document.getElementById("quest-two").addEventListener("mousemove", function(){answerFunction(2);}, false);
