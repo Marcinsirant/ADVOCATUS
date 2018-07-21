@@ -35,8 +35,9 @@ img{
 }
 
 .btn-primery{
-	bottom: 30px;
-    position: relative;
+	position: absolute;
+	 right:0%;
+	 bottom: 0%;
 }
 
 .btn-normaly{
@@ -123,6 +124,7 @@ img{
     left: 15%;
     bottom: 5%;
     border-left: 3px solid #e8bf5d;
+    width: 80%;
 }
 
 

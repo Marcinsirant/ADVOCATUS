@@ -68,14 +68,19 @@ function answerFunction(num){
 }
 
 // smooth scroll
+const lastCurrentY = 0
+const speed = 10;
 
 function autoScrollTo(el){
+	
 	const target = document.getElementById(el).offsetTop; 
-	const speed = 10;
 	const interval = setInterval(function(){
 		const currentY = window.pageYOffset;
 		if(target > currentY){
 			window.scroll(0, currentY+speed)
+			if(document.documentElement.offsetHeight==(window.innerHeight+currentY)){
+				clearInterval(interval);
+			}
 		}else{
 			clearInterval(interval);
 		}
