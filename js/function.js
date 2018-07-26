@@ -88,3 +88,11 @@ function autoScrollTo(el){
 
 	return 0;
 }	
+
+window.sr = ScrollReveal();
+    sr.reveal('h3, p', {
+        reset: true,
+        duration: 600,
+        distance: '20px',
+        scale: 0.7
+    });
